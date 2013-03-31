@@ -29,17 +29,23 @@ and results can be seen in "cache.out"
 
 
 Possible parameters are:
+
 -L   [default 4]
 	Specify the amount of bits a memory address has to be used to index inside the line
 	(line size)
+
 -L1  [default 16]
 	Specify the amount of bits an L1 address has. (cache size)
+
 -L2  [default 20]
 	Specify the amount of bits an L1 address has. (cache size)
+
 -V   [default 4]
 	Specify the amount of ways a cache line has.
+
 -lru [default 0]
 	Use LRU instead of FIFO as a line replacement policy.
+
 -o   [default cache.out]
 	Specify the report output filename.
 
