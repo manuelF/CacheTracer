@@ -1,0 +1,16 @@
+
+Analisis de prediccion de saltos para  "svn checkout http://tpsh.dc.uba.ar/svn/materias-orga2/2012-cuat2 orga2"
+===============================================================================================================
+Tamaño BHT: 4096 entradas
+Cantidad saltos en total: 1606178905
+
+Eficiencia: 
+===================
+  Metodo     	  Mispredictions 			Eficiencia
+-- LowerAddress 	347106541 			78.3893%
+-- AlwaysJmp    	732282511 			54.4084%
+-- NeverJmp     	873896394 			45.5916%
+-- SingleBit    	172276429 			89.2741%
+-- TwoBit Sat   	101505802 			93.6803%
+-- TwoBit Hist  	97950425 			93.9016%
+

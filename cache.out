@@ -1,0 +1,29 @@
+
+Analisis de cache writeback para  "locate peron" usando 2 niveles de cache usando reemplazo FIFO
+================================================================================================
+Tamaño de L1: 16kb Cantidad de lineas de L1: 4096
+Tamaño de L2: 256kb Cantidad de lineas de L2: 65536
+
+Tamaño de la linea: 16
+Cantidad de Vias:  4
+
+Hitrate de L1: 99.9958%
+Cantidad de Hits en L1: 293170591
+Cantidad de Miss L1: 12216
+Cantidad de Read L1: 105977589
+Cantidad de Write L1: 187216675
+Cantidad de WriteBacks al siguiente nivel de L1: 304
+
+Hitrate de L2: 3.9377%
+Cantidad de Hits en L2: 493
+Cantidad de Miss L2: 12027
+Cantidad de Read L2: 304
+Cantidad de Write L2: 24243
+Cantidad de WriteBacks al siguiente nivel de L2: 0
+
+
+Lineas de L1 usadas: 4094 de 4096
+Lineas de L2 usadas: 10823 de 65536
+
+Lineas Internas (Lineas * Vias) de L1 usadas: 11457 de 16384
+Lineas Internas (Lineas * Vias) de L2 usadas: 12027 de 262144
