@@ -16,9 +16,10 @@ Example output can be found in "cache.out" and "jmp.out". It is in spanish so fa
 
 
 
+-----------------------------
 (In Spanish)
 
-Meta:
+Meta
 ======
 
 Implementar por software algunos mecanismos que implementan las microarquitecturas de
@@ -32,10 +33,8 @@ Ambos simuladores fueron construidos alrededor de las herramientas
 que provee Intel, a traves de la libreria PIN. (http://www.pintool.org/)
 
 
-===
+Simulador de Cache multinivel
 ================
-Simulador de Cache multinivel:
------------------------------
 
 a) Para ejecutar:
 
@@ -102,9 +101,8 @@ El unico cambio necesario seria agregar los parametros para customizarlo, que se
 
 
 
-================
-Predictor de saltos:
--------------------
+Predictor de saltos
+===================
 
 a) Para ejecutar:
 	./jmpsim.sh <parametros> -- <ejecutable>
@@ -151,9 +149,8 @@ Algunos de estos metodos fueron tratados en el libro de Henessy-Patterson
 
 
 
-================
 Programas interesantes para probar
-----------------------------------
+================
 
 Las comillas son para mostrarlas aca, en los simuladores van sin comillas
 
