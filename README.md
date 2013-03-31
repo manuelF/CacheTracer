@@ -19,7 +19,7 @@ Multilevel cache simulator
 
 a) To run:
 
-	./cachesim.sh <parameters> -- <executable>
+	./cachesim.sh \<parameters> -- <executable>
 
 i.e to run "ls -la" using a 6-way LRU Associative cache:
 
@@ -81,6 +81,7 @@ Jump Predictor Simulator
 ===================
 
 a) To run:
+
 	./jmpsim.sh <parameters> -- <executable>
 
 
@@ -124,14 +125,12 @@ Some of these methods were discussed in the  Henessy-Patterson book, "Computer A
 
 Interesting programs to try
 ================
-
-* "ls -la"
-* "traceroute google.com"
-* "bash" (and use it normally, quit by logout)
-* "firefox"
-* "locate <file>" (even if it doesn't exist, has to use sudo for it)
-* "ssh <user>@<maquina>"
-
+* ls -la
+* traceroute google.com
+* bash (and use it normally, quit by logout)
+* firefox
+* locate file"  (even if it doesn't exist, has to use sudo for it)
+* ssh \<user\>@\<maquina\>
 
 Notes
 =====
@@ -238,7 +237,8 @@ El unico cambio necesario seria agregar los parametros para customizarlo, que se
 Predictor de saltos
 ===================
 
-a) Para ejecutar:
+a) Para ejecutar
+
 	./jmpsim.sh <parametros> -- <ejecutable>
 
 
@@ -290,12 +290,12 @@ Programas interesantes para probar
 
 Las comillas son para mostrarlas aca, en los simuladores van sin comillas
 
-* "ls -la"
-* "traceroute google.com"
-* "bash" (y usarla normalmente. Para terminar, desloguearse)
-* "firefox"
-* "locate archivo" (incluso si no existe, hay que usar sudo para el script)
-* "ssh <user>@<maquina>"
+* ls -la
+* traceroute google.com
+* bash" (y usarla normalmente. Para terminar, desloguearse)
+* firefox
+* locate archivo" (incluso si no existe, hay que usar sudo para el script)
+* ssh \<user\>@\<maquina\>
 
 Notas
 =====
