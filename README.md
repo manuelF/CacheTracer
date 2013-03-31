@@ -130,7 +130,7 @@ Interesting programs to try
 * bash (and use it normally, quit by logout)
 * firefox
 * locate file"  (even if it doesn't exist, has to use sudo for it)
-* ssh \<user\>@\<maquina\>
+* ssh \<user\>@\<machine\>
 
 Notes
 =====
