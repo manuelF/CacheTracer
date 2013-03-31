@@ -69,7 +69,61 @@ The simulator is designed to be completely extensible to the necessary cache lev
 The only changed need would be to add the extra parameters to be able to customize them.hacer facilmente.
 
 
-Usage
+Jump Predictor Simulator
+===================
+
+a) To run:
+	./jmpsim.sh <parameters> -- <executable>
+
+
+i.e, to run "ls -la" with a BHT of 2^4 entries:
+
+	./jmpsim.sh -s 4 -- ls -la
+
+
+Report results are, by default, in "jmp.out"
+
+
+Possible parameters are:
+-s   [default 12]
+	Specifies the amount of bits in the BHT table (size, amount of bits of a memory address
+	used to index a state machine table.)
+-o   [default jmp.out]
+	Specifies the report filename.
+
+b) Details
+The jump predictor simulator code is at:
+	simulators/jmp.cpp
+
+The simulators was conceived to try to understand basic jump prediction mechanisms,
+to avoid pipeline stalls when conditional branches arise.
+
+The internal mechanism is simple. A binding to the program passed by arguments
+is created using PIN, so the simulator counts every time a conditional instruction is executed.
+
+Several prediction mechanisms were implemented, some of the obvious and stateless,
+"Always Jump" and "Never Jumps" as proof of how jumps in a program are located.
+Some of the more interesting ones such as "Jump if and only if going to a lower address" proved
+to be much more effective than naive ones, reasonable performance for adding little additional logic.
+
+Two more advanced ones, '2 bit sat counter' and '2 bit hystheresis' were also implemented. They
+work by state machines indexed by some bits of the instruction point.
+
+Some of these methods were discussed in the  Henessy-Patterson book, "Computer Architecture".
+
+
+Interesting programs to try
+================
+
+"ls -la"
+"traceroute google.com"
+"bash" (and use it normally, quit by logout)
+"firefox"
+"locate <file>" (even if it doesn't exist, has to use sudo for it)
+"ssh <user>@<maquina>"
+
+
+Notes
 =====
 
 The folder "simulators" has to be placed in an accesible place to the PIN compiler files.
@@ -225,3 +279,10 @@ Las comillas son para mostrarlas aca, en los simuladores van sin comillas
 "locate archivo" (incluso si no existe, hay que usar sudo para el script)
 "ssh <user>@<maquina>"
 
+Notas
+=====
+
+La carpeta "simulators" tiene que ser puesta en un lugar accesible a PIN.
+Los scripts "./cachesim.sh" y "./jmpsim.sh" corren el simulador PIN con los parametros pasados como argumentos.
+
+Salidas de ejemplo se pueden encontrar en "cache.out" y "jmp.out".
