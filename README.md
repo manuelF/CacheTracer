@@ -50,6 +50,8 @@ Possible parameters are:
 	Specify the report output filename.
 
 
+
+
 b) Details
 
 The cache simulator code can be found in:
@@ -91,9 +93,11 @@ Report results are, by default, in "jmp.out"
 
 
 Possible parameters are:
+
 -s   [default 12]
 	Specifies the amount of bits in the BHT table (size, amount of bits of a memory address
 	used to index a state machine table.)
+
 -o   [default jmp.out]
 	Specifies the report filename.
 
@@ -121,12 +125,12 @@ Some of these methods were discussed in the  Henessy-Patterson book, "Computer A
 Interesting programs to try
 ================
 
-"ls -la"
-"traceroute google.com"
-"bash" (and use it normally, quit by logout)
-"firefox"
-"locate <file>" (even if it doesn't exist, has to use sudo for it)
-"ssh <user>@<maquina>"
+* "ls -la"
+* "traceroute google.com"
+* "bash" (and use it normally, quit by logout)
+* "firefox"
+* "locate <file>" (even if it doesn't exist, has to use sudo for it)
+* "ssh <user>@<maquina>"
 
 
 Notes
@@ -173,19 +177,25 @@ Y los resultados se pueden ver en "cache.out"
 
 
 Los parametros posibles son:
+
 -L   [default 4]
 	Especifica la cantidad de bits que tiene una direccion de memoria que se
 	usan para indexar dentro de la linea (tamaño de la linea)
+
 -L1  [default 16]
 	Especifica la cantidad de bits que tiene una direccion en la L1	(tamaño de la cache)
+
 -L2  [default 20]
 	Especifica la cantidad de bits que tiene una direccion en la L2	(tamaño de la cache)
+
 -V   [default 4]
 	Especifica la cantidad de vias que hay en una linea de cache
+
 -lru [default 0]
 	Utiliza desalojo LRU de la linea en vez de FIFO
+
 -o   [default cache.out]
-	Especifica el nombre del archivo de salida del informe
+	Especifica el nombre del archivo de salida del informe.
 
 
 
@@ -241,9 +251,11 @@ Y los resultados se pueden ver, por default, en "jmp.out"
 
 
 Los parametros posibles son:
+
 -s   [default 12]
 	Especifica la cantidad de bits de la tabla BHT (tamaño, la cantidad de
 	bits de una direccion que se toman para indexar una tabla con maquina de estados)
+
 -o   [default jmp.out]
 	Especifica el nombre del archivo de salida del reporte
 
@@ -278,12 +290,12 @@ Programas interesantes para probar
 
 Las comillas son para mostrarlas aca, en los simuladores van sin comillas
 
-"ls -la"
-"traceroute google.com"
-"bash" (y usarla normalmente. Para terminar, desloguearse)
-"firefox"
-"locate archivo" (incluso si no existe, hay que usar sudo para el script)
-"ssh <user>@<maquina>"
+* "ls -la"
+* "traceroute google.com"
+* "bash" (y usarla normalmente. Para terminar, desloguearse)
+* "firefox"
+* "locate archivo" (incluso si no existe, hay que usar sudo para el script)
+* "ssh <user>@<maquina>"
 
 Notas
 =====
