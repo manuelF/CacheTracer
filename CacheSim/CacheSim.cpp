@@ -250,8 +250,10 @@ void initBuffs()
     }
     //Si hay un 1
     lru=0;
-    if(atoi(KnobLRU.Value().c_str())==1)
+    if (atoi(KnobLRU.Value().c_str())==1) 
+    {
         lru = 1;
+    }
 
 	return;
 }
