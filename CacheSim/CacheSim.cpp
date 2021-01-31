@@ -19,6 +19,8 @@ Manuel Ferreria 2012
 #define CACHE_LEVELS 2
 #define INSTRUCTION_CACHE_LEVELS 1
 
+using namespace std;
+
 typedef struct {
 UINT32 tag;
 UINT32 p;

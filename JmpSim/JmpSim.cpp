@@ -22,6 +22,8 @@ Manuel Ferreria 2012
 #define TWOBITSAT 1 //Contador de saturacion
 #define TWOBITHIST 1 //Contador de saturacion usando metodo alternativo de histeresis
 
+using namespace std;
+
 UINT32 bhtsize; // tamaño de la BHT
 UINT64 cantJmps=0; //cuantos jmps (cond o no) tiene el programa
 
