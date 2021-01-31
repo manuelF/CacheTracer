@@ -34,11 +34,11 @@ Multilevel cache simulator
 
 a) To run:
 
-  `$(PIN_ROOT)/pin -t CacheSim/obj-intel64 <parameters> -- <executable>`
+  `$PIN_ROOT/pin -t CacheSim/obj-intel64 <parameters> -- <executable>`
 
 i.e to run "ls -la" using a 6-way LRU Associative cache:
 
-  `$(PIN_ROOT)/pin -t CacheSim/obj-intel64 -V 6 -lru -1 -o cache.out -- <executable>`
+  `$PIN_ROOT/pin -t CacheSim/obj-intel64 -V 6 -lru -1 -o cache.out -- <executable>`
 
 and results can be seen in "cache.out"
 
@@ -95,11 +95,11 @@ Jump Predictor Simulator
 
 a) To run:
 
-  `$(PIN_ROOT)/pin -t JmpSim/obj-intel64 <parameters> -- <executable>`
+  `$PIN_ROOT/pin -t JmpSim/obj-intel64 <parameters> -- <executable>`
 
 i.e, to run "ls -la" with a BHT of 2^4 entries:
 
-  `$(PIN_ROOT)/pin -t JmpSim/obj-intel64  -s 4 -o cache.out -- ls -la`
+  `$PIN_ROOT/pin -t JmpSim/obj-intel64  -s 4 -o cache.out -- ls -la`
 
 Report results are, by default, in "jmp.out"
 
